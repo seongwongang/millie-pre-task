@@ -4,6 +4,7 @@
 - 상품 전체 리스트를 조회 합니다.
 url : (GET) http://localhost:8000/api/products/
 결과 :
+```
 [
   {
     "id": 1,
@@ -40,7 +41,7 @@ url : (GET) http://localhost:8000/api/products/?category={id}
     "discount_rate": "0.10"
   },
 ]
-
+```
 **- 상품 상세 정보**
 
 상세정보
