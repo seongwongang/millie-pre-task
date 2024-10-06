@@ -23,6 +23,7 @@ class ProductSerializer(serializers.ModelSerializer):
     def to_representation(self, instance):
         representation = super().to_representation(instance)
         data = {
+            'id': instance.id,
             'name': instance.name,
             'description': instance.description,
             'price': instance.price,

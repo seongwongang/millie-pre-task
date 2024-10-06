@@ -40,7 +40,6 @@ class Product(models.Model):
         if coupon_code and self.coupon_applicable:
             try:
                 coupon_obj = Coupon.objects.get(code=coupon_code)
-                print(coupon_obj)
                 final_price -= (final_price * float(coupon_obj.discount_rate))
             except Coupon.DoesNotExist:
                 print("Coupon not found : {coupon_code}".format(coupon_code=coupon_code))
